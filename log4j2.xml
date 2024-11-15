@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+	
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
+            <Filters>
+                <ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+        </Console>
+        
+        <File name="JavaFile1" fileName="MyData\logs\MyJavaLog.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
+        </File>
+        <File name="TestNgFile1" fileName="MyData\logs\TestNgLog.log">
+            <!-- <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" /> -->
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %L %logger{36} - %msg%n" />
+        </File>
+        
+    </Appenders>
+
+    <Loggers>
+		
+		<Logger name="com.hashmap.java.LoggingTest1" level="debug" additivity="false">
+            <AppenderRef ref="JavaFile1" />
+        </Logger>
+        <Logger name="com.hashmap.java.TestNgLog4jOne" level="debug" additivity="false">
+            <AppenderRef ref="TestNgFile1" />
+        </Logger>
+        <Logger name="com.hashmap.java.TestNgHashmapLogging" level="debug" additivity="false">
+            <AppenderRef ref="TestNgFile1" />
+        </Logger>
+        <Logger name="com.hashmap.java.TestNgHashmapTest" level="debug" additivity="false">
+            <AppenderRef ref="TestNgFile1" />
+        </Logger>
+		
+		<!-- Suppress INFO messages from TestNG -->
+        <Logger name="org.testng" level="warn" additivity="false">
+            <AppenderRef ref="console" />
+            <AppenderRef ref="TestNgFile1" />
+        </Logger>
+        <!-- Suppress INFO messages from other noisy packages -->
+        <Logger name="org.apache" level="warn" additivity="false">
+            <AppenderRef ref="console" />
+            <AppenderRef ref="TestNgFile1" />
+        </Logger>
+
+        <Root level="debug">
+            <AppenderRef ref="console" />
+            <AppenderRef ref="JavaFile1" />
+            <AppenderRef ref="TestNgFile1" />
+        </Root>
+        
+    </Loggers>
+    
+</Configuration>

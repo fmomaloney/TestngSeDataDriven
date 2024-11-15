@@ -1,0 +1,32 @@
+{"RegisterTestPositive": { "FirstName" : "Joseph",
+  "LastName" : "James",
+  "RegEmail" : "berfo.com",
+  "RegPwd" : "123456",
+  "PwdConfirm" : "123456"
+  },
+ "RegisterUtfPositive": { "FirstName" : "店主",
+  "LastName" : "Japanese",
+  "RegEmail" : "gmail.com",
+  "RegPwd" : "123456",
+  "PwdConfirm" : "123456"
+  },
+ "NoFirstNameNegative": { "FirstName" : "",
+  "LastName" : "NoFirstName",
+  "RegEmail" : "pbs.org",
+  "RegPwd" : "123456",
+  "PwdConfirm" : "123456"
+  },
+  "DuplicateEmailPositive": { "FirstName" : "Joseph",
+   "LastName" : "James",
+   "RegEmail" : "berfo.com",
+   "RegPwd" : "123456",
+   "PwdConfirm" : "123456"
+   },
+   "PwdConfirmNegative": { "FirstName" : "Miss",
+    "LastName" : "MatchedPasswords",
+    "RegEmail" : "aol.com",
+    "RegPwd" : "123456",
+    "PwdConfirm" : "abcdefg"
+    }
+ }
+  

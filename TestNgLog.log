@@ -1,0 +1,58 @@
+2024-11-15 11:05:07 INFO  76 com.hashmap.java.TestNgHashmapTest - ##### before tests, fill data map #####
+2024-11-15 11:05:07 INFO  91 com.hashmap.java.TestNgHashmapTest - populating data for test PwdConfirmNegative!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyRegEmail = aol.com!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyPwdConfirm = abcdefg!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyRegPwd = 123456!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyFirstName = Miss!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyLastName = MatchedPasswords!
+2024-11-15 11:05:07 INFO  91 com.hashmap.java.TestNgHashmapTest - populating data for test RegisterTestPositive!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyRegEmail = berfo.com!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyPwdConfirm = 123456!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyRegPwd = 123456!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyFirstName = Joseph!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyLastName = James!
+2024-11-15 11:05:07 INFO  91 com.hashmap.java.TestNgHashmapTest - populating data for test DuplicateEmailPositive!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyRegEmail = berfo.com!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyPwdConfirm = 123456!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyRegPwd = 123456!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyFirstName = Joseph!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyLastName = James!
+2024-11-15 11:05:07 INFO  91 com.hashmap.java.TestNgHashmapTest - populating data for test NoFirstNameNegative!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyRegEmail = pbs.org!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyPwdConfirm = 123456!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyRegPwd = 123456!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyFirstName = !
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyLastName = NoFirstName!
+2024-11-15 11:05:07 INFO  91 com.hashmap.java.TestNgHashmapTest - populating data for test RegisterUtfPositive!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyRegEmail = gmail.com!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyPwdConfirm = 123456!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyRegPwd = 123456!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyFirstName = 店主!
+2024-11-15 11:05:07 INFO  99 com.hashmap.java.TestNgHashmapTest - keyLastName = Japanese!
+2024-11-15 11:05:07 INFO  111 com.hashmap.java.TestNgHashmapTest - done with the map
+2024-11-15 11:05:07 INFO  115 com.hashmap.java.TestNgHashmapTest - set up the webdriver now
+2024-11-15 11:05:09 INFO  122 com.hashmap.java.TestNgHashmapTest - ----- before a method? ------
+2024-11-15 11:05:10 INFO  38 com.hashmap.java.TestNgHashmapTest - OOOOO  starting @test methods  OOOOO
+2024-11-15 11:05:10 INFO  47 com.hashmap.java.TestNgHashmapTest - Running test case: PwdConfirmNegative
+2024-11-15 11:05:10 INFO  53 com.hashmap.java.TestNgHashmapTest - grabbing values from map: Miss,MatchedPasswords,aol.com,123456,abcdefg.
+2024-11-15 11:05:12 INFO  185 com.hashmap.java.TestNgHashmapTest - register user Miss MatchedPasswords at missmatchedpasswords5144@aol.com.
+2024-11-15 11:05:12 INFO  196 com.hashmap.java.TestNgHashmapTest - test result for PwdConfirmNegative is false!
+2024-11-15 11:05:12 WARN  59 com.hashmap.java.TestNgHashmapTest - Failures: expected [true] but found [false]
+2024-11-15 11:05:12 INFO  47 com.hashmap.java.TestNgHashmapTest - Running test case: RegisterTestPositive
+2024-11-15 11:05:12 INFO  53 com.hashmap.java.TestNgHashmapTest - grabbing values from map: Joseph,James,berfo.com,123456,123456.
+2024-11-15 11:05:13 INFO  185 com.hashmap.java.TestNgHashmapTest - register user Joseph James at josephjames7554@berfo.com.
+2024-11-15 11:05:14 INFO  196 com.hashmap.java.TestNgHashmapTest - test result for RegisterTestPositive is true!
+2024-11-15 11:05:14 INFO  47 com.hashmap.java.TestNgHashmapTest - Running test case: DuplicateEmailPositive
+2024-11-15 11:05:14 INFO  53 com.hashmap.java.TestNgHashmapTest - grabbing values from map: Joseph,James,berfo.com,123456,123456.
+2024-11-15 11:05:15 INFO  185 com.hashmap.java.TestNgHashmapTest - register user Joseph James at josephjames1043@berfo.com.
+2024-11-15 11:05:16 INFO  196 com.hashmap.java.TestNgHashmapTest - test result for DuplicateEmailPositive is true!
+2024-11-15 11:05:16 INFO  47 com.hashmap.java.TestNgHashmapTest - Running test case: NoFirstNameNegative
+2024-11-15 11:05:16 INFO  53 com.hashmap.java.TestNgHashmapTest - grabbing values from map: ,NoFirstName,pbs.org,123456,123456.
+2024-11-15 11:05:17 INFO  185 com.hashmap.java.TestNgHashmapTest - register user  NoFirstName at nofirstname2114@pbs.org.
+2024-11-15 11:05:17 INFO  196 com.hashmap.java.TestNgHashmapTest - test result for NoFirstNameNegative is false!
+2024-11-15 11:05:17 WARN  59 com.hashmap.java.TestNgHashmapTest - Failures: expected [true] but found [false]
+2024-11-15 11:05:17 INFO  47 com.hashmap.java.TestNgHashmapTest - Running test case: RegisterUtfPositive
+2024-11-15 11:05:17 INFO  53 com.hashmap.java.TestNgHashmapTest - grabbing values from map: 店主,Japanese,gmail.com,123456,123456.
+2024-11-15 11:05:18 INFO  185 com.hashmap.java.TestNgHashmapTest - register user 店主 Japanese at 店主japanese1090@gmail.com.
+2024-11-15 11:05:19 INFO  196 com.hashmap.java.TestNgHashmapTest - test result for RegisterUtfPositive is true!
+2024-11-15 11:05:20 INFO  132 com.hashmap.java.TestNgHashmapTest - starting @after methods
